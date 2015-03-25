@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 static const unsigned char qt_resource_data[] = {
-  // E:/Simon/GreenEye/GreenEye/Resources/20150323040138669_easyicon_net_32.ico
+  // E:/Simon/GitRepository/GreenEye/GreenEye/GreenEye/Resources/20150323040138669_easyicon_net_32.ico
   0x0,0x0,0x10,0xbe,
   0x0,
   0x0,0x1,0x0,0x1,0x0,0x20,0x20,0x0,0x0,0x1,0x0,0x20,0x0,0xa8,0x10,0x0,

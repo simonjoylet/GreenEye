@@ -9,3 +9,9 @@ Setting::Setting(QWidget *parent)
 Setting::~Setting()
 {
 }
+
+void Setting::closeEvent(QCloseEvent * e)
+{
+	hide();
+	e->ignore();
+}

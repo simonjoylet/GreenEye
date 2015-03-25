@@ -1,14 +1,15 @@
-#include "Tray.h"
+#include "TrayIcon.h"
 
-Tray::Tray(QObject *parent)
+TrayIcon::TrayIcon(QObject *parent)
 	: QSystemTrayIcon(parent)
 {
 	setToolTip("This is GreenEye by Simon.");
 	setIcon(QIcon(":/GreenEye/trayIcon"));
 	showMessage("GreenEye", "GreenEye has started.", QSystemTrayIcon::Information, 1000);
+	show();
 }
 
-Tray::~Tray()
+TrayIcon::~TrayIcon()
 {
 
 }

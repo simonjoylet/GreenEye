@@ -77,13 +77,22 @@
     <ClCompile Include="Setting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_Tray.cpp">
+    <ClCompile Include="TrayMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TrayMenu.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_Tray.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_TrayMenu.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="Tray.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_TrayIcon.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TrayIcon.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TrayIcon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -115,7 +124,10 @@
     <CustomBuild Include="Setting.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="Tray.h">
+    <CustomBuild Include="TrayMenu.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TrayIcon.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>

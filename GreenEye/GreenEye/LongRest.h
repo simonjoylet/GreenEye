@@ -5,6 +5,7 @@
 #include "ui_LongRest.h"
 #include <QKeyEvent>
 #include <QTimer>
+#include <QCloseEvent>
 
 class LongRest : public QWidget
 {
@@ -14,6 +15,7 @@ public:
 	LongRest(QWidget *parent = 0);
 	~LongRest();
 	virtual void keyPressEvent(QKeyEvent * e);
+	virtual void closeEvent(QCloseEvent * e);
 
 public slots:
 	void showLongRestWidget();

@@ -11,3 +11,9 @@ ShortRest::~ShortRest()
 {
 
 }
+
+void ShortRest::closeEvent(QCloseEvent * e)
+{
+	hide();
+	e->ignore();
+}

@@ -5,8 +5,11 @@
 #include "ui_GreenEye.h"
 #include "LongRest.h"
 #include "ShortRest.h"
-#include "Tray.h"
+#include "TrayIcon.h"
+#include "TrayMenu.h"
+#include "Setting.h"
 #include <QTimer>
+#include <QTime>
 
 class GreenEye : public QMainWindow
 {
@@ -15,18 +18,32 @@ class GreenEye : public QMainWindow
 public:
 	GreenEye(QWidget *parent = 0);
 	~GreenEye();
-	void initActions();
+	void signalSlot();
+	
+public slots:
+	void On_trayIconActivated(QSystemTrayIcon::ActivationReason _reason);
+	void On_settingActionTriggered();
+	void On_pauseActionTriggered();
+	void On_quitActionTriggered();
+
+	void On_timeout();
+
 
 private:
 	Ui::GreenEye ui;
 
 	LongRest * m_longRestWidget;
 	ShortRest * m_shortRestWidget;
-	Tray * m_trayIcon;
+	TrayIcon * m_trayIcon;
+	TrayMenu * m_trayMenu;
+	Setting * m_settingWidget;
 
-	QAction * m_settingAction;
-	QAction * m_pauseAction;
-	QAction * m_quitAction;
+	QTimer * m_timer;
+	QTime m_localTime;
+
+	int m_shortRestTime;
+	int m_longRestTime;
+
 };
 
 #endif // GREENEYE_H
