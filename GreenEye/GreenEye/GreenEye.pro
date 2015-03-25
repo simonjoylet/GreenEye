@@ -17,16 +17,18 @@ OBJECTS_DIR += debug
 UI_DIR += ./GeneratedFiles
 RCC_DIR += ./GeneratedFiles
 HEADERS += ./LongRest.h \
+    ./TrayMenu.h \
     ./GreenEye.h \
     ./Setting.h \
-    ./Tray.h \
+    ./TrayIcon.h \
     ./ShortRest.h
 SOURCES += ./GreenEye.cpp \
     ./Setting.cpp \
-    ./Tray.cpp \
+    ./TrayIcon.cpp \
     ./LongRest.cpp \
     ./main.cpp \
-    ./ShortRest.cpp
+    ./ShortRest.cpp \
+    ./TrayMenu.cpp
 FORMS += ./LongRest.ui \
     ./ShortRest.ui \
     ./Setting.ui \
